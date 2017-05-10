@@ -1,0 +1,3 @@
+・pip install でエラー
+set http_proxy=http://ﾌﾟﾛｷｼｻｰﾊﾞｰ:ﾎﾟｰﾄ
+set https_proxy=http://ﾌﾟﾛｷｼｻｰﾊﾞ:ﾎﾟｰﾄ

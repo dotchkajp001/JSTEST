@@ -1,0 +1,2 @@
+http://yohei-y.blogspot.jp/
+http://dev.classmethod.jp/etc/web-api_rest-api_url-design/
