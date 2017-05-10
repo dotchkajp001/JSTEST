@@ -1,0 +1,8 @@
+2017/05/10
+・Visual Studio Codeでjsをデバッグ
+
+・jekyll
+・kintone
+
+・オブジェクトストレージ
+

@@ -1,0 +1,16 @@
+VisualStudioCode
+・jsをデバッグ
+
+Bluemix
+・tomcatのserver.xmlをｱｯﾌﾟﾛｰﾄﾞ
+
+js
+・chartjs
+
+ObjectStrage
+・cyberDuck?
+
+課題
+ObjectStrageにｱｯﾌﾟﾛｰﾄﾞ
+・swift(python)ｺﾏﾝﾄﾞの利用?
+・node.jsからｱｯﾌﾟﾛｰﾄﾞ

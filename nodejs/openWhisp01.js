@@ -1,5 +1,6 @@
 var fs = require('fs');
 
+// bluemixから実行されるﾌﾟﾛｸﾞﾗﾑ
 function main(params){
     console.log("hello" + params.name);
     // fileMake();
