@@ -1,0 +1,9 @@
+インストール
+npm install ﾓｼﾞｭｰﾙ名
+or
+npm -g install ﾓｼﾞｭｰﾙ名
+
+// ｲﾝｽﾄｰﾙ場所
+npm bin
+
+NODE_PATHの環境変数を参照

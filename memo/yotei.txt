@@ -9,7 +9,10 @@ js
 ・chartjs
 
 ObjectStrage
+・curl
+・swift
 ・cyberDuck?
+http://cloud.gmo.jp/docs/objectstorage/
 
 課題
 ObjectStrageにｱｯﾌﾟﾛｰﾄﾞ

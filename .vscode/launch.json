@@ -5,7 +5,7 @@
             "name": "起動",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/nodejs/test.js",
+            "program": "${workspaceRoot}/nodejs/script/workfilemake.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
