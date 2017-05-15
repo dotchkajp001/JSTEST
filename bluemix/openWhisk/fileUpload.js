@@ -39,9 +39,9 @@ function main(params){
 }
 
 // テスト用
-/**
+/** **/
 console.log('ローカル実行');
 var params = {"docNm":"local2.txt",
                 "docText":"テストデータ2"};
 main(params);
-**/
+/** **/

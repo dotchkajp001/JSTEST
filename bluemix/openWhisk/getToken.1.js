@@ -38,10 +38,7 @@ function main(params){
                 });
                 
                 resolve({"url":obj2[0].url,
-                    "token":res.headers['x-subject-token'],
-                    "fName":params.fName,
-                    "fText":params.fText
-                });
+                    "token":res.headers['x-subject-token']});
             }
         })
     })
