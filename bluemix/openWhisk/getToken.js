@@ -30,6 +30,7 @@ function main(params){
                 console.log('error:', err, body);
                 reject(err);
             }else{
+                // bodyからｵﾌﾞｼﾞｪｸﾄｽﾄﾚｰｼﾞのurl情報を検索
                 var obj = body.token['catalog'].filter(function(item, index){
                     if(item.type == 'object-store') return true;
                 });
@@ -37,6 +38,7 @@ function main(params){
                     if(item.region_id == 'dallas' && item.interface == 'public') return true;
                 });
                 
+                // 返却値
                 resolve({"url":obj2[0].url,
                     "token":res.headers['x-subject-token'],
                     "fName":params.fName,

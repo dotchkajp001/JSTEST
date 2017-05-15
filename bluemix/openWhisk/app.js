@@ -1,4 +1,5 @@
 // bluemix用のﾒｲﾝ処理
+
 function main(params){
     var request = require("request");
 
