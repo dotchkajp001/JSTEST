@@ -41,6 +41,7 @@ function main(params){
                 // 返却値
                 resolve({"url":obj2[0].url,
                     "token":res.headers['x-subject-token'],
+                    "container":params.container,
                     "fName":params.fName,
                     "fText":params.fText
                 });

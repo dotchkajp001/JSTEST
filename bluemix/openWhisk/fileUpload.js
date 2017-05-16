@@ -13,7 +13,10 @@ function main(params){
             if(err){
                 reject(err);
             }else{
-                resolve({"result":"success"});
+                if(body == ""){
+                    body = "success";
+                }
+                resolve({"result":body});
             }
         })
     })

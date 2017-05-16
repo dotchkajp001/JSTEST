@@ -1,0 +1,3 @@
+RESTクライアントを作成する
+https://www.agilegroup.co.jp/technote/java-rest-client01.html
+

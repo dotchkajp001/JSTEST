@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- 折れ線出力ｻﾝﾌﾟﾙ -->
+<html lang="ja">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    </head>
+    <body>
+        <canvas id="mycanvas" width="400" height="400"></canvas>
+        <script>
+            var myChart = new Chart(mycanvas,{
+                type:'line',
+                data:{
+                    labels:["val1","val2"],
+                    datasets:[{
+                        label:'values',
+                        data:[100,200]
+                    }]
+                },
+                options:{
+                    responsive:false,
+                    scales:{
+                        yAxes:[{
+                            ticks:{
+                                beginAtZero:true
+                            }
+                        }]
+                    }
+                }
+            })
+        </script>
+    </body>
+</html>
