@@ -1,8 +1,28 @@
-2017/05/10
-・Visual Studio Codeでjsをデバッグ
-
-・jekyll
+・link検索
+・udemy
+・cacco
 ・kintone
+・azure
+・ファイルアップロード・ダウンロード
+・クラウド
 
-・オブジェクトストレージ
+https://www.slideshare.net/unokichi/bluemixdocker-50127214
+https://www.niandc.co.jp/sol/tech/date20161204_561.php
+http://dotnsf.blog.jp/tag/paas
 
+・PLSQLｵﾌﾞｼﾞｪｸﾄ指向
+・RESTAPI
+
+・DB
+
+http://webfood.info/amazon-s3-sync/
+https://www.slideshare.net/zembutsu/docker-images-containers-and-lifecycle
+
+bluemix
+オブジェクトストレージ マウントできないか
+SCHEDULER
+
+https://help.compose.com/docs/bluemix-compose-support
+
+・エンジン
+・サンプル

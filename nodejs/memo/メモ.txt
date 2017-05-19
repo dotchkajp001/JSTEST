@@ -7,3 +7,5 @@ npm -g install ﾓｼﾞｭｰﾙ名
 npm bin
 
 NODE_PATHの環境変数を参照
+
+https://www.slideshare.net/tricknotes/nodejs-27589695

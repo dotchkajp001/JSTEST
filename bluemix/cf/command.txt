@@ -1,2 +1,19 @@
 cf api
 cf login
+
+cf login -a https://api.ng.bluemix.net -u ﾕｰｻﾞ名 -p ﾊﾟｽﾜｰﾄﾞ
+cf push <appname> -p <war名> -b java_buildpack
+
+cf login -a https://api.ng.bluemix.net -u highpot24@yahoo.co.jp
+cf login -a https://api.ng.bluemix.net -u highpot12@yahoo.co.jp -p Tuna1234
+
+cf push aplitest01 -p ge.war -b https://github.com/otsample/java-buildpack.git
+cf push otsample02 -p ge.war -b https://github.com/otsample/java-buildpack.git
+
+// postgres CSV出力						
+psql -d testdb -p 5433 -U postgres -c "select * from ge12 where param_id='SYSTEM_ID'" -A -F, > H:\opengion_user\war\foo.csv						
+
+// 環境変数の設定方法
+cf set-env aplitest01 APP_BASE /home/vcap/app						
+cf set-env aplitest01 INSTALL_CONTEXTS postgresql,						※postgresの場合
+cf set-env aplitest01 JBP_CONFIG_TOMCAT "{tomcat:{context_path:/ge}}"						

@@ -1,7 +1,7 @@
 // bluemix用のﾒｲﾝ処理
 function main(params){
     var request = require("request");
-
+    
     var promise = new Promise(function(resolve, reject){
         // ﾌｧｲﾙｱｯﾌﾟﾛｰﾄﾞ処理(ﾃｽﾄ用ｺﾝﾃﾅｰのtest)
         request.put({

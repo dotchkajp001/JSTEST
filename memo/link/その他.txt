@@ -1,0 +1,8 @@
+slideshare
+https://www.slideshare.net/k.wada/ss-15668866
+nodejs
+https://nodejs.org/ja/
+chartjs
+http://www.chartjs.org/
+java api
+http://docs.oracle.com/javase/jp/8/docs/api/

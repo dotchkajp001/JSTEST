@@ -1,0 +1,5 @@
+gizLogicでtableModeの値を変更
+COMMON27A.java
+table.setValue(double[],row);
+
+

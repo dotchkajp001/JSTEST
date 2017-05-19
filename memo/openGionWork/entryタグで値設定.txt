@@ -1,0 +1,3 @@
+<og:entry command="MODIFY" selectedAll="true">
+	<og:columnSet command="MODIFY" columnId="CALC" action="SET" value="100" />
+</og:entry>

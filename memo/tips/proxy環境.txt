@@ -1,0 +1,8 @@
+// cmd
+set http_proxy=http://mtc-px14:8081
+set https_proxy=http://mtc-px14:8081
+
+// git
+git config --global http.proxy http://mtc-px14:8081
+git config --global https.proxy http://mtc-px14:8081
+
