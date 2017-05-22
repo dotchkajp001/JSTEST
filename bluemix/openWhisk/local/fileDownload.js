@@ -1,17 +1,8 @@
 var fs = require('fs');
 var request = require('request');
-//var request = require("request").defaults({encoding:null});
 
-console.log('fileDownload start');
-
-// var fileName = "test.bmp";
-// var localFileName = "testDownload.bmp";
-var fileName = "確認資料.xlsx";
-var localFileName = "確認資料_down.xlsx";
-var fileName = "bb.xlsx";
-var localFileName = "bb_down.xlsx";
-var fileName = "ああ.xlsx";
-var localFileName = "ああ_down.xlsx";
+// ﾀﾞｳﾝﾛｰﾄﾞするﾌｧｲﾙ名
+var fileName = "test.xlsx";
 
 // ファイルをbase64形式にｴﾝｺｰﾄﾞして、読み込み
 var param = {"userId":"aaa482516d5e41c1b3e067e964a1fdc5",
@@ -27,12 +18,12 @@ request.post({
     headers:{'accept':'application/json'},
     json:param
 }, function(err, res, body){
-    console.log(body);
-
+    if(err){
+        console.log(err);
+    }
     // base64ﾃﾞｺｰﾄﾞ
     var text = new Buffer(body.text,'base64');
     // ﾌｧｲﾙの保存
-    fs.writeFile(localFileName,text);
+    fs.writeFile('download/' + fileName,text);
+    console.log('filedownload success');
 });
-
-

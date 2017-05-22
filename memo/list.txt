@@ -26,3 +26,5 @@ https://help.compose.com/docs/bluemix-compose-support
 
 ・エンジン
 ・サンプル
+
+http://nkawamura.hatenablog.com/entry/2014/05/28/163015

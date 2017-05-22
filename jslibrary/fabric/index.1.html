@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.11/fabric.min.js"></script>
+    </head>
+    <body>
+        <script>
+        </script>
+        <style>
+            canvas{
+                #background-color:gray;
+            }
+        </style>
+        <canvas id="mycanvas" width="400" height="400"></canvas>
+        <inptu id="txt1" type="text" value="テスト文字" />
+        test
+
+        <script>
+                console.log('start');
+
+                var canvas = new fabric.Canvas('mycanvas');
+
+                // 矩形オブジェクト
+                var rect = new fabric.Rect({
+                    left:100,
+                    top:100,
+                    fill:'red',
+                    width:40,
+                    height:40
+                });
+                var rect2 = new fabric.Rect({
+                    left:150,
+                    top:150,
+                    fill:'blue',
+                    width:40,
+                    height:40
+                });
+
+                canvas.add(rect);
+                canvas.add(rect2);
+        </script>
+
+        <script>
+            var data;
+            var point1;
+            var point2;
+        </script>
+
+        <!-- JSON形式で保存・ロード
+        <button type="button" onclick="data = JSON.stringify(canvas);">保存</button>
+        <button type="button" onclick="canvas.loadFromJSON(data).renderAll();">読み込み</button>
+        -->
+
+        <script>
+            
+            function scaleUp(){
+                var mycanvas2 = document.getElementById("mycanvas");
+                var ctx = mycanvas2.getContext("2d");
+                ctx.scale(2,2);
+                //ctx.restore();
+                //mycanvas.scale(2,2);
+            };
+            function test2(){
+                console.log('test start');
+                // 変数定義
+                // var cs       = document.getElementById('mycanvas'),
+                //     ctx      = cs.getContext('2d'),
+                //     csWidth  = cs.width,
+                //     csHeight = cs.height,
+                //     center   = {
+                //     x: csWidth / 2,
+                //     y: csHeight / 2
+                //     };
+
+                // 線の基本スタイル
+                // ctx.strokeStyle = '#666';
+                // ctx.lineWidth = 10;
+
+                var mycanvas2 = document.getElementById("mycanvas");
+                var ctx = mycanvas2.getContext("2d");
+                console.log(ctx);
+                ctx.beginPath();
+                ctx.moveTo(0,0);
+                ctx.lineTo(100,100);
+                ctx.closePath();
+                ctx.stroke();
+            }
+        </script>
+        <button type="button" onclick="console.log(rect);">確認</button>
+        <button type="button" onclick="rect.set({width:60});canvas.renderAll();">変更</button>
+        <button type="button" onclick="alert(canvas.toSVG())">SVG</button>
+        <button type="button" onclick="alert(JSON.stringify(canvas))">JSON</button>
+        <button type="button" onclick="scaleUp();">拡大</button>
+        <button type="button" onclick="test2();">線を引く</button>
+        <script>
+            console.log(mycanvas);
+        </script>
+    </body>
+</html>

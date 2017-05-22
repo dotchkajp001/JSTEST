@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.11/fabric.min.js"></script>
+    </head>
+    <body>
+    <style>
+        /**
+        #mycanvas{
+            background:url('test.jpg');
+            background-size: cover;
+        }
+        /**/
+    </style>
+    <canvas id="mycanvas" width="400" height="400"></canvas>
+    <canvas id="mycanvas2" width="400" height="400"></canvas>
+    test
+    <script>
+        var fabCanvas = new fabric.Canvas('mycanvas');
+        //fabCanvas.setBackgroundImage("test.jpg");
+
+        // 矩形ｵﾌﾞｼﾞｪｸﾄの生成
+        var rect = new fabric.Rect({
+            fill:'red',
+            width:40,
+            height:40
+        });
+
+        rect.on('mousedown',function(){
+            var rect2 = new fabric.Rect({
+                fill:'red',
+                width:40,
+                height:40
+            });
+            //fabCanvas.add(rect2);
+            fabCanvas.setZoom(4);
+            console.log(fabCanvas.selection);
+            //fabCanvas.
+
+            console.log('mousedown');
+        });
+
+        console.log('rect');
+        fabCanvas.add(rect);
+
+        // ﾃｷｽﾄｵﾌﾞｼﾞｪｸﾄの生成
+        var text = new fabric.Text("test Str"
+        ,{fontSize:15});
+
+        // ｲﾍﾞﾝﾄの設定
+        text.on('selected',function(){
+            
+            console.log('click');
+            var str = window.prompt();
+            text.text = str;
+        });
+        fabCanvas.add(text);
+
+        // ｵﾌﾞｼﾞｪｸﾄのﾌﾟﾛﾊﾟﾃｨ
+        //fabCanvas.backgroundImage="test.jpg";
+        //fabCanvas.renderAll();
+    </script>
+
+    <div style="background-image:url('test.jpg')">test</div>
+    <button onclick="change();">変更</button>
+    <button onclick="delete2();">削除</button>
+    <script>
+        function delete2(){
+            // rect.delete();
+            // fabCanvas.renderAll();
+            fabCanvas.remove(rect);
+            fabCanvas.renderAll();
+        }
+
+        function change(){
+            rect.set('height',100);
+            console.log('btn');
+            text.text = "更新文字";
+
+            fabCanvas.renderAll();
+        }
+    </script>
+    </body>
+</html>
