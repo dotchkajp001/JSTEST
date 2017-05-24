@@ -1,0 +1,30 @@
+mavenのダウンロードされる場所
+C:\Users\opengion\.m2\repository
+
+・mavenのproxy設定
+http://qiita.com/nikuyoshi/items/567f78e07e5733907491
+
+・simple-serviceのﾀﾞｳﾝﾛｰﾄﾞｺﾏﾝﾄﾞ
+mvn archetype:generate -DarchetypeArtifactId=jersey-quickstart-grizzly2 -DarchetypeGroupId=org.glassfish.jersey.archetypes -DinteractiveMode=false -DgroupId=com.example -DartifactId=simple-service -Dpackage=com.example -DarchetypeVersion=2.25.1
+
+・mavenのjarﾀﾞｳﾝﾛｰﾄﾞ場所
+https://teratail.com/questions/6180
+
+・The Central Repository
+http://search.maven.org/#artifactdetails%7Ccom.sun.jersey%7Cjersey-bundle%7C1.9%7Cjar
+・jarのダウンロードサイト
+http://www.java2s.com/
+・cdnjs
+https://cdnjs.com/
+
+・glassfish
+https://yoshio3.com/2016/05/30/from-glassfish-2-payara/
+
+・Vagrant
+・Docker
+・openStack
+・Chef
+
+https://www.ibm.com/developerworks/jp/webservices/library/ws-devaxis2part1/
+
+http://www.techscore.com/tech/Java/ApacheJakarta/Maven/2-2/

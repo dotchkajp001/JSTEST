@@ -9,17 +9,16 @@
     </head>
     <body>
     <style>
-        /**
         #mycanvas{
             background:url('test.jpg');
             background-size: cover;
         }
-        /**/
     </style>
     <canvas id="mycanvas" width="400" height="400"></canvas>
     <canvas id="mycanvas2" width="400" height="400"></canvas>
     test
     <script>
+        // fabric用Canvasの生成
         var fabCanvas = new fabric.Canvas('mycanvas');
         //fabCanvas.setBackgroundImage("test.jpg");
 
@@ -27,19 +26,24 @@
         var rect = new fabric.Rect({
             fill:'red',
             width:40,
-            height:40
+            height:40,
+            top:40,
+            left:40,
+            selectable:false
         });
 
         rect.on('mousedown',function(){
             var rect2 = new fabric.Rect({
                 fill:'red',
                 width:40,
-                height:40
+                height:40,
+                top:40,
+                left:40
             });
-            //fabCanvas.add(rect2);
-            fabCanvas.setZoom(4);
-            console.log(fabCanvas.selection);
-            //fabCanvas.
+            // fabCanvas.add(rect2);
+            // fabCanvas.setZoom(4);
+            // console.log(fabCanvas.selection);
+            // fabCanvas.
 
             console.log('mousedown');
         });
@@ -48,26 +52,34 @@
         fabCanvas.add(rect);
 
         // ﾃｷｽﾄｵﾌﾞｼﾞｪｸﾄの生成
-        var text = new fabric.Text("test Str"
-        ,{fontSize:15});
+        var text = new fabric.Text("テスト文字列"
+        ,{fontSize:15,
+        top:40,
+        left:40,
+        selectable:false});
+
+        fabCanvas.add(text);
 
         // ｲﾍﾞﾝﾄの設定
         text.on('selected',function(){
             
             console.log('click');
-            var str = window.prompt();
-            text.text = str;
+            // var str = window.prompt();
+            // text.text = str;
         });
-        fabCanvas.add(text);
 
+        //rect.set('selectable',false);
+        //fabCanvas.renderAll();
         // ｵﾌﾞｼﾞｪｸﾄのﾌﾟﾛﾊﾟﾃｨ
         //fabCanvas.backgroundImage="test.jpg";
         //fabCanvas.renderAll();
     </script>
 
-    <div style="background-image:url('test.jpg')">test</div>
-    <button onclick="change();">変更</button>
-    <button onclick="delete2();">削除</button>
+    <!--<div style="background-image:url('test.jpg')">test</div>-->
+
+    <!--<button onclick="change();">変更</button>
+    <button onclick="delete2();">削除</button>-->
+
     <script>
         function delete2(){
             // rect.delete();

@@ -1,0 +1,3 @@
+postgres 9.6
+ﾊﾟｽﾜｰﾄﾞ Administrator
+
