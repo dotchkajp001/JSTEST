@@ -8,7 +8,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     </head>
     <body>
+        <style>
+            canvas{
+                float:left;
+            }
+        </style>
         <canvas id="mycanvas" width="400" height="400"></canvas>
+        <canvas id="mycanvas2" width="400" height="400"></canvas>
         <script>
             var myChart = new Chart(mycanvas,{
                 type:'line',
@@ -28,6 +34,44 @@
                 },
                 options:{
                     responsive:false,
+                    layout:{
+                        padding:{
+                            bottom:100
+                        }
+                    },
+                    scales:{
+                        yAxes:[{
+                            ticks:{
+                                beginAtZero:true
+                            }
+                        }]
+                    }
+                }
+            });
+
+            var myChart2 = new Chart(mycanvas2,{
+                type:'line',
+                data:{
+                    labels:["2017/01/02","2017/01/03","2017/01/04","2017/01/05","2017/01/01","2017/01/01","2017/01/01","2017/01/01","2017/01/01","2017/01/01"],
+                    datasets:[{
+                        label:'values',
+                        data:[100,200,200,200,200,200,200,200,200,200],
+                        fill:false,
+                        pointBackgroundColor:"red"
+                    },{
+                        label:'values',
+                        data:[150,100],
+                        fill:false,
+                        pointBackgroundColor:"black"
+                    }]
+                },
+                options:{
+                    responsive:false,
+                    layout:{
+                        padding:{
+                            bottom:100
+                        }
+                    },
                     scales:{
                         yAxes:[{
                             ticks:{
@@ -37,7 +81,6 @@
                     }
                 }
             })
-        <
-        /script>
+        </script>
     </body>
 </html>
