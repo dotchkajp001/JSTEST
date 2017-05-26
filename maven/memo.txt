@@ -28,3 +28,9 @@ https://yoshio3.com/2016/05/30/from-glassfish-2-payara/
 https://www.ibm.com/developerworks/jp/webservices/library/ws-devaxis2part1/
 
 http://www.techscore.com/tech/Java/ApacheJakarta/Maven/2-2/
+
+http://d.hatena.ne.jp/kameid/20090620/1245474424
+
+https://mvnrepository.com/
+
+https://www.w3schools.com/
