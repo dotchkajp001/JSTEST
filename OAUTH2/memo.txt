@@ -1,2 +1,25 @@
 
 https://developer.ntt.com/ja/blog/27d30623-f460-43af-97c9-10e60433dae4
+
+
+
+OAuth1.0
+https://syncer.jp/Web/API/OAuth/
+
+OAuth1.0
+http + 署名方式
+
+OAuth2.0
+https + 
+
+https://murashun.jp/blog/20150920-01.html
+
+OAuthｸﾗｲｱﾝﾄ ｻﾝﾌﾟﾙ
+http://codezine.jp/article/detail/7977?p=2
+
+static final String CLIENT_ID = "545829681320-cq9u8u23m4qativ2lkjnuptg4nsrlfe9.apps.googleusercontent.com";
+static final String CLIENT_SECRET = "";
+-- google apiから取得
+
+git hub サンプル
+https://github.com/soeirosantos/simple-oauthserver

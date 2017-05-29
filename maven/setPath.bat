@@ -8,4 +8,4 @@ set PATH=%PATH%;H:\opengion_user\download\apache-maven-3.5.0\bin;
 cd /d %~dp0
 
 rem ﾃｽﾄ用ﾌｫﾙﾀﾞ移動
-cd test
+cd H:\opengion_user\workVSCode\sample\maven
