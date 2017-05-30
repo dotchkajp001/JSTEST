@@ -17,9 +17,33 @@ https://murashun.jp/blog/20150920-01.html
 OAuthｸﾗｲｱﾝﾄ ｻﾝﾌﾟﾙ
 http://codezine.jp/article/detail/7977?p=2
 
+javaのvm引数に下記を設定
+-Dhttp.proxyHost=mtc-px14
+-Dhttp.proxyPort=8081
+-Dhttps.proxyHost=mtc-px14
+-Dhttps.proxyPort=8081
+
 static final String CLIENT_ID = "545829681320-cq9u8u23m4qativ2lkjnuptg4nsrlfe9.apps.googleusercontent.com";
 static final String CLIENT_SECRET = "";
 -- google apiから取得
 
 git hub サンプル
 https://github.com/soeirosantos/simple-oauthserver
+
+
+http://dev.classmethod.jp/server-side/virtual-box-vagrant/
+
+OpenId Connect
+
+https://github.com/authlete/java-oauth-server/blob/master/README.ja.md
+
+仕様情報
+http://qiita.com/TakahikoKawasaki/items/f2a0d25a4f05790b3baa
+http://qiita.com/hidebike712/items/ede39abf0c860b3b96e5#%EF%B8%8E-authlete-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6
+
+
+http://qiita.com/TakahikoKawasaki/items/200951e5b5929f840a1f
+クライアント・クレデンシャルズフロー
+
+リクエスト
+アプリのクライアントIDとクライアントシークレット
