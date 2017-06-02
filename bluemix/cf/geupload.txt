@@ -1,0 +1,16 @@
+SYSDATEをnow()に変更
+GE54のOPTIONSにDEFAULT設定(初期登録でnullで登録しようとする処理が存在する為)
+05_SRCは実行されないように除外(Postgresの形式で記載されていない為)
+DBConfig.xmlに定義を追加 RESOURCE GE GF
+
+cfｺﾏﾝﾄﾞで各種設定
+set http_proxy=http://mtc-px14:8081
+set https_proxy=http://mtc-px14:8081
+cf login -a https://api.ng.bluemix.net -u ﾕｰｻﾞ名 -p ﾊﾟｽﾜｰﾄﾞ
+
+cf set-env ｱﾌﾟﾘid APP_BASE /home/vcap/app
+cf set-env ｱﾌﾟﾘid INSTALL_CONTEXTS postgresql,
+cf set-env ｱﾌﾟﾘid JBP_CONFIG_TOMCAT "{tomcat : {context_path : /ge}}"
+cf set-env ｱﾌﾟﾘid JAVA_OPTS "-DconnectionDriver=org.postgresql.Driver -DconnectionUrl=jdbc:postgresql://sl-us-dal-9-portal.3.dblayer.com:23485/compose2 -DconnectionName=admin -DconnectionPassword=PDBFZPVLBUVPIFHQ"
+
+cf push ｱﾌﾟﾘid -p ge.war -b https://github.com/otsample/java-buildpack.git

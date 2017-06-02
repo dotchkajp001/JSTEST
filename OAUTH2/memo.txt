@@ -47,3 +47,10 @@ http://qiita.com/TakahikoKawasaki/items/200951e5b5929f840a1f
 
 リクエスト
 アプリのクライアントIDとクライアントシークレット
+
+OAuth2
+OpenId Connect
+
+OpenAM
+Apach Oltu
+Spring Security

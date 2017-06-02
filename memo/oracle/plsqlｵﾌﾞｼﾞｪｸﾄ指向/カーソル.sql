@@ -1,0 +1,57 @@
+create or replace
+FUNCTION PNC_OT01(
+	XSYSTEM_ID  IN VARCHAR2 ,
+	XLISTID     IN VARCHAR2 ,
+	XKBTEXT     IN VARCHAR2  )
+RETURN VARCHAR2
+IS
+    RTN			GE54.BSQL%TYPE;
+    CNM			VARCHAR2(1);
+--	CRLF		VARCHAR2(2)  := CHR(10) || CHR(13);
+	CRLF		VARCHAR2(2)  := CHR(10) ;
+
+	CURSOR CODEC1 IS
+		--SELECT COLUMN_NAME,START_POS,USE_LENGTH
+		SELECT CLM as COLUMN_NAME,START_POS,USE_LENGTH
+			FROM	GE52
+			WHERE	SYSTEM_ID  = XSYSTEM_ID
+			AND		LISTID     = XLISTID
+			AND		KBTEXT     = XKBTEXT
+			AND		FGUSE      = '1'
+			AND		FGJ       IN ( '0','1' )
+			ORDER BY SEQ ;
+
+	CODEREC CODEC1%ROWTYPE;
+
+BEGIN
+	RTN := 'SELECT' || CRLF ;
+	CNM := ' ' ;
+
+	OPEN	CODEC1;
+
+	LOOP
+		FETCH CODEC1 INTO CODEREC;
+		EXIT WHEN CODEC1%NOTFOUND;
+
+		RTN := RTN || ' ' || CNM || 'CUT(TEXT_DATA,' ||
+					CODEREC.START_POS || ',' || CODEREC.USE_LENGTH || ') ' ||
+					CODEREC.COLUMN_NAME || CRLF ;
+		CNM := ',' ;
+
+	END LOOP;
+	CLOSE CODEC1;
+
+	/* CNM が、スペースのままであるとき、データが ０件であった。 */
+	IF( CNM = ' ' ) THEN
+		RTN := '';
+	ELSE
+		RTN := RTN || ' FROM GE51 WHERE FGJ = ' || '''1''' || CRLF ||
+				' AND   SYSTEM_ID = ? ' || CRLF ||
+				' AND   YKNO      = ? ' || CRLF ||
+				' AND   KBTEXT    = ' || '''' || XKBTEXT || '''' || CRLF ||
+				' ORDER BY EDNO' ;
+	END IF;
+
+	RETURN RTN;
+
+END PNC_OT01;
