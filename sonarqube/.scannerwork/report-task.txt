@@ -1,0 +1,6 @@
+projectKey=Javascript:JsTest01
+serverUrl=http://localhost:9000
+serverVersion=6.4.0.25310
+dashboardUrl=http://localhost:9000/dashboard/index/Javascript:JsTest01
+ceTaskId=AVx7p1O3RHAOyt0Dh9-d
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVx7p1O3RHAOyt0Dh9-d
