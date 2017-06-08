@@ -10,7 +10,7 @@
             //"program":"${workspaceRoot}/bluemix/openWhisk/local/fileUpload.js",
             //"program":"${workspaceRoot}/bluemix/openWhisk/local/fileDownload.js",
             //"program":"${workspaceRoot}/nodejs/test/express.js",
-            "program":"${workspaceRoot}/javascript/do.js",
+            "program":"${workspaceRoot}/javascript/ES5/test.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",

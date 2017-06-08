@@ -1,3 +1,5 @@
 connection pool
 http://johonet.ddo.jp/b/?page_id=762
 
+
+http://geoscript.org/groovy/mavenwebappjndi.html
