@@ -1,0 +1,63 @@
+http://udemy.benesse.co.jp/development/php-laravel.html
+
+1. xamppのｲﾝｽﾄｰﾙ
+2. composeのｲﾝｽﾄｰﾙ
+3. laravelのｲﾝｽﾄｰﾙ
+
+laravel new ﾌﾟﾛｼﾞｪｸﾄ名
+
+ﾌｫﾙﾀﾞはhttpd.ﾌｧｲﾙに記載されている
+
+PHP			
+Webｻｰﾊﾞｰ			
+Apache HTTP Server		※windowsは	
+			
+ﾊﾞｰｼﾞｮﾝ			
+現在Downloadｻｲﾄに表示されるﾊﾞｰｼﾞｮﾝ			
+	5.6.30	ｾｷｭﾘﾃｨsﾎﾟｰﾄは2018年12月31日まで	
+	7.0.18	ver7以降、大きく性能向上されたそうです。	
+	7.1.4		
+			
+開発環境			
+	VisualtStudioCode		
+	Eclipse		
+			
+ﾂｰﾙ			
+	composer	依存性管理ﾂｰﾙ	https://getcomposer.org/download/
+	laravel homestead	仮想環境用の開発環境作成ﾂｰﾙ	
+			
+httpd			
+	Apacheを使う場合はThread Safe		
+	IISを使う場合はNon Thread Safe		
+			
+windowsの場合、XAMPPを使用してｲﾝｽﾄｰﾙするのが便利			
+			
+特徴			
+	クラスベースのオブジェクト指向構文をサポート		
+	PHP5以降で、抽象化とｲﾝﾀﾌｪｰｽも導入.		
+			
+			
+Lalabel			
+公式ﾍﾟｰｼﾞ			
+	http://laravel.jp/		
+特徴			
+	MVCﾌﾚｰﾑﾜｰｸ		
+ﾗｲｾﾝｽ			
+	MITﾗｲｾﾝｽ		
+			
+	リフレクションを使った柔軟なDI		
+	ﾃﾞﾌｫﾙﾄでAmazon SQS,SES,S3と連携可能		
+	Vue.jsが使用可能。		
+		
+		
+LaravelでRest APIを開発する			
+http://dim5.net/laravel/developing-rest-api.html			
+
+
+phpﾋﾞﾙﾄｲﾝｻｰﾊﾞの起動
+php artisan serve
+
+laravel最新ﾊﾞｰｼﾞｮﾝのﾌﾟﾛｼﾞｪｸﾄが作成される
+laravel new ﾌﾟﾛｼﾞｪｸﾄ名
+指定ﾊﾞｰｼﾞｮﾝのﾌﾟﾛｼﾞｪｸﾄが作成される
+composer create-project "laravel/laravel=5.1.*" ﾌﾟﾛｼﾞｪｸﾄ名

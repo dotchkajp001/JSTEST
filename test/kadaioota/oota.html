@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>演習 太田</title>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"><!-- --></script>
+		<script>
+			$(function(){
+				$.ajax({
+					url:'http://its-dev1.muratec.co.jp:8837/sc/jsp/json.jsp',
+					dataType:'jsonp',
+					jsonpCallback:'callback',
+					success:function(data){	// 成功時
+                        var sum = 0;
+                        var tblHtml = "";
+                        $(data.DATA).each(function(index, elem){
+                            // 部課ｺｰﾄﾞと部課名のﾍﾟｱを設定
+                            tblHtml += "<tr><td>部課コード：</td><td>"
+                                + elem.BUKA
+                                + "</td><td>部課名：</td><td>"
+                                + elem.NAME
+                                + "</td></tr>";
+                            // 人数を集計
+                            sum += parseInt(elem.SU);
+
+                            console.log(elem);
+                        })
+                        // 集計人数を設定
+                        tblHtml += "</tr><tr><td>人数合計：</td><td>"
+                            + sum
+                            + "</td>";
+                        $('#tbl1').append(tblHtml);
+					},
+					error:function(erjqXHR, textStatus, errorThrown){	// ｴﾗｰ時
+						alert("通信ｴﾗｰ:" + textStatus + errorThrown);
+					}
+				})
+			})
+			</script>
+	</head>
+	<body>
+        <!-- 部課ﾘｽﾄ -->
+        <table id="tbl1"></table>
+	</body>
+</html>

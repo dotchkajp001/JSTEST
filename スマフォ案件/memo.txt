@@ -1,0 +1,18 @@
+・レイアウトはHTMLを使用。レスポンシブはBootstrapを使用。
+・APIのデータフォーマットはJSONを想定。
+・APIはPHPで実装想定。
+・通信はSSL HTTPS POST通信を採用。
+・セキュリティはTLS1.2以上。
+PHP : Laravel 
+ iOS : Swift 
+ iOSDB : Realm
+
+php
+ﾋﾞﾙﾄｲﾝｻｰﾊﾞ
+ http://www.granfairs.com/blog/cto/php-builtin-server
+ http://windows.php.net/download/
+
+swift
+ https://swift.sandbox.bluemix.net/#/repl
+
+
