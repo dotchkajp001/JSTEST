@@ -53,13 +53,12 @@ Lalabel
 LaravelでRest APIを開発する			
 http://dim5.net/laravel/developing-rest-api.html			
 
-
 phpﾋﾞﾙﾄｲﾝｻｰﾊﾞの起動
 php artisan serve
 
-laravel最新ﾊﾞｰｼﾞｮﾝのﾌﾟﾛｼﾞｪｸﾄが作成される
+・laravel最新ﾊﾞｰｼﾞｮﾝのﾌﾟﾛｼﾞｪｸﾄが作成される
 laravel new ﾌﾟﾛｼﾞｪｸﾄ名
-指定ﾊﾞｰｼﾞｮﾝのﾌﾟﾛｼﾞｪｸﾄが作成される
+・指定ﾊﾞｰｼﾞｮﾝのﾌﾟﾛｼﾞｪｸﾄが作成される
 composer create-project "laravel/laravel=5.1.*" ﾌﾟﾛｼﾞｪｸﾄ名
 
 http://www.phpbook.jp/tutorial/

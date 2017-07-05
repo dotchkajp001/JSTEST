@@ -1,0 +1,12 @@
+rem ｴﾗｰ情報の出力
+dir 2> err.log
+
+pushd/popd
+net use
+
+rem ポート一覧
+netstat -na
+
+rem ドライブ一覧
+echo list volume | diskpart > log.log
+
