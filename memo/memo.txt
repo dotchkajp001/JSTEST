@@ -2,3 +2,5 @@ eclipse.exe clean
 https://teratail.com/questions/67785
 
 https://www.techonthenet.com/css/properties/font.php
+
+http://yokano-jp.blogspot.jp/2014/01/javascript.html
